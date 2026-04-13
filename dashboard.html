@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html class="light" lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,11 +6,11 @@
     <title>LISSA - Dashboard Overview</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
       rel="stylesheet"
     />
     <script id="tailwind-config">
@@ -22,62 +21,16 @@
             colors: {
               "surface-container": "#edeeef",
               primary: "#004e86",
-              "inverse-on-surface": "#f0f1f2",
-              "on-background": "#191c1d",
-              "secondary-container": "#cfe6f2",
               background: "#f8f9fa",
               "surface-container-lowest": "#ffffff",
-              "surface-container-high": "#e7e8e9",
-              "surface-dim": "#d9dadb",
-              "inverse-surface": "#2e3132",
-              "on-primary-container": "#cfe2ff",
-              outline: "#717782",
-              "outline-variant": "#c1c7d2",
-              "on-error": "#ffffff",
-              "on-secondary": "#ffffff",
-              "on-tertiary-fixed-variant": "#723600",
-              "on-primary": "#ffffff",
-              "surface-bright": "#f8f9fa",
-              "secondary-fixed": "#cfe6f2",
-              "primary-fixed-dim": "#a0caff",
-              "surface-container-highest": "#e1e3e4",
-              "inverse-primary": "#a0caff",
-              "on-tertiary": "#ffffff",
-              "primary-fixed": "#d2e4ff",
-              surface: "#f8f9fa",
-              "on-surface-variant": "#414751",
-              "tertiary-fixed": "#ffdcc7",
-              "surface-variant": "#e1e3e4",
-              "on-secondary-container": "#526772",
-              "primary-container": "#0066ae",
-              error: "#ba1a1a",
-              "surface-container-low": "#f3f4f5",
-              tertiary: "#793a00",
               "on-surface": "#191c1d",
-              "on-secondary-fixed": "#071e27",
-              "surface-tint": "#0061a6",
-              "tertiary-container": "#9d4d01",
-              secondary: "#4c616c",
-              "error-container": "#ffdad6",
-              "on-primary-fixed": "#001c37",
-              "on-primary-fixed-variant": "#00497e",
-              "on-secondary-fixed-variant": "#354a53",
-              "secondary-fixed-dim": "#b4cad6",
-              "tertiary-fixed-dim": "#ffb787",
-              "on-tertiary-fixed": "#311300",
-              "on-tertiary-container": "#ffd8c1",
-              "on-error-container": "#93000a",
-            },
-            borderRadius: {
-              DEFAULT: "0.125rem",
-              lg: "0.25rem",
-              xl: "0.5rem",
-              full: "0.75rem",
+              "on-surface-variant": "#414751",
+              "outline-variant": "#c1c7d2",
+              error: "#ba1a1a",
             },
             fontFamily: {
               headline: ["Manrope"],
               body: ["Inter"],
-              label: ["Inter"],
             },
           },
         },
@@ -93,22 +46,16 @@
       }
       body {
         font-family: "Inter", sans-serif;
-        background-color: #f3f4f5; /* surface-container-low */
-      }
-      .sidebar-active {
-        font-weight: 700;
-        border-left-width: 4px;
-        padding-left: 1rem;
+        background-color: #f3f4f5;
       }
     </style>
   </head>
-  <body class="text-on-background selection:bg-secondary-container">
-    <!-- SideNavBar -->
+  <body class="text-on-background selection:bg-blue-100">
     <aside
-      class="fixed left-0 top-0 h-full w-64 bg-slate-100 dark:bg-slate-900 flex flex-col py-6 transition-all duration-200 ease-in-out font-manrope tracking-tight text-sm z-50"
+      class="fixed left-0 top-0 h-full w-64 bg-slate-100 dark:bg-slate-900 flex flex-col py-6 transition-all font-manrope text-sm z-50 border-r border-slate-200"
     >
       <div class="px-6 mb-10">
-        <a href="dashboard.html" class="flex items-center gap-3">
+        <a href="#" class="flex items-center gap-3">
           <img
             src="logo-lissa.png"
             alt="LISSA Logo"
@@ -130,757 +77,293 @@
       </div>
       <nav class="flex-1 space-y-1">
         <a
-          class="flex items-center py-3 px-5 text-blue-800 dark:text-blue-300 font-bold border-l-4 border-blue-700 dark:border-blue-400 pl-4 bg-blue-50/50 dark:bg-blue-900/20 group"
-          href="dashboard.html"
+          class="flex items-center py-3 px-5 text-blue-800 font-bold border-l-4 border-blue-700 bg-blue-50/50"
+          href="#"
         >
-          <span class="material-symbols-outlined mr-3" data-icon="dashboard"
-            >dashboard</span
-          >
+          <span class="material-symbols-outlined mr-3">dashboard</span>
           Dashboard
         </a>
         <a
-          class="flex items-center py-3 px-5 text-slate-600 dark:text-slate-400 pl-5 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-700 transition-all duration-200"
+          class="flex items-center py-3 px-5 text-slate-600 pl-6 hover:bg-blue-50 hover:text-blue-700 transition-all"
           href="project-list.html"
         >
-          <span class="material-symbols-outlined mr-3" data-icon="list_alt"
-            >list_alt</span
-          >
+          <span class="material-symbols-outlined mr-3">list_alt</span>
           Daftar Permohonan
         </a>
-        <!-- <a
-          class="flex items-center py-3 px-5 text-slate-600 dark:text-slate-400 pl-5 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-700 transition-all duration-200"
-          href="progress.html"
-        >
-          <span class="material-symbols-outlined mr-3" data-icon="speed"
-            >speed</span
-          >
-          Progress Update
-        </a>
-        <a
-          class="flex items-center py-3 px-5 text-slate-600 dark:text-slate-400 pl-5 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-700 transition-all duration-200"
-          href="report.html"
-        >
-          <span class="material-symbols-outlined mr-3" data-icon="assessment"
-            >assessment</span
-          >
-          Reports
-        </a>
-        <a
-          class="flex items-center py-3 px-5 text-slate-600 dark:text-slate-400 pl-5 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-700 transition-all duration-200"
-          href="upload.html"
-        >
-          <span class="material-symbols-outlined mr-3" data-icon="cloud_upload"
-            >cloud_upload</span
-          >
-          Evidence Upload
-        </a> -->
       </nav>
       <div class="px-6 mt-auto">
-        <div
-          class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200/50 dark:border-slate-700/50"
-        >
-          <p class="text-xs font-bold text-slate-400 mb-2 uppercase">
-            System Status
-          </p>
-          <div class="flex items-center gap-2">
-            <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
-            <span
-              class="text-xs font-semibold text-slate-700 dark:text-slate-300"
-              >All Systems Nominal</span
-            >
-          </div>
-        </div>
         <a
-          href="login.html"
-          class="flex items-center gap-2 mt-4 px-2 py-2 text-slate-500 hover:text-red-600 transition-colors text-xs font-semibold"
+          href="#"
+          class="flex items-center gap-2 mt-4 px-2 py-2 text-slate-500 hover:text-red-600 text-xs font-semibold"
         >
-          <span class="material-symbols-outlined text-lg">logout</span>
-          Sign Out
+          <span class="material-symbols-outlined text-lg">logout</span> Sign Out
         </a>
       </div>
     </aside>
-    <!-- TopNavBar -->
+
     <header
-      class="fixed top-0 right-0 w-[calc(100%-16rem)] h-16 bg-white/70 dark:bg-slate-950/70 backdrop-blur-md flex items-center justify-between px-8 z-40 border-b border-slate-200/50 dark:border-slate-800/50"
+      class="fixed top-0 right-0 w-[calc(100%-16rem)] h-16 bg-white/70 backdrop-blur-md flex items-center justify-between px-8 z-40 border-b border-slate-200"
     >
       <div class="flex items-center w-1/3">
         <div class="relative w-full max-w-md">
           <span
             class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg"
-            data-icon="search"
             >search</span
           >
           <input
-            class="w-full bg-slate-100/50 dark:bg-slate-900/50 border-none rounded-full py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary/20 placeholder:text-slate-400"
-            placeholder="Search projects, customers, or tickets..."
+            class="w-full bg-slate-100 border-none rounded-full py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary/20"
+            placeholder="Cari ID pelanggan atau proyek..."
             type="text"
           />
         </div>
       </div>
-      <div class="flex items-center gap-6">
-        <div class="flex items-center gap-4 text-slate-500">
-          <button
-            class="hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
-          >
-            <span class="material-symbols-outlined" data-icon="notifications"
-              >notifications</span
-            >
-          </button>
-          <button
-            class="hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
-          >
-            <span class="material-symbols-outlined" data-icon="help_outline"
-              >help_outline</span
-            >
-          </button>
+      <div class="flex items-center gap-3">
+        <div class="text-right">
+          <p class="text-sm font-bold text-slate-900 leading-tight">
+            Sarah Jenkins
+          </p>
+          <p class="text-[10px] text-slate-500 font-medium">
+            Operations Manager
+          </p>
         </div>
-        <div class="h-8 w-[1px] bg-slate-200 dark:bg-slate-800"></div>
-        <div class="flex items-center gap-3">
-          <div class="text-right">
-            <p
-              class="text-sm font-bold text-slate-900 dark:text-white leading-tight"
-            >
-              Sarah Jenkins
-            </p>
-            <p class="text-[10px] text-slate-500 font-medium">
-              Operations Manager
-            </p>
-          </div>
-          <img
-            alt="User Profile Avatar"
-            class="w-10 h-10 rounded-full object-cover ring-2 ring-primary/10"
-            data-alt="professional portrait of a confident woman in corporate attire with soft office lighting background"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-ZFhIo7FtWDkAGG8GEnU486vgMZQNri3ZK0toL36LYp3hEoYbjPm6QmR7Qf8e1cxXFcww25WCHuWk_A6a1zRiBLeqyzuHGfe4T779CNu2bEBth9JWxfzyH9kio0zkwOm6PuMgoFB61787zbbZrFwbPn2BYQWDhLvk6t_2R_6vH-bz14d5NygJ0CrZ_ebXjMmNy7-aaSo-HssYJ26gWcIJiVFlkG1NJbIcs0UKY_TmBmCHcy740v-Da4x2GvJTp2GeYokM20qHABI"
-          />
-        </div>
+        <div
+          class="w-10 h-10 rounded-full bg-slate-200 border-2 border-primary/10"
+        ></div>
       </div>
     </header>
-    <!-- Main Content Canvas -->
+
     <main class="pt-24 pb-20 pl-72 pr-8 min-h-screen">
-      <!-- Dashboard Header -->
-      <div class="mb-10 flex justify-between items-end">
-        <div>
-          <h2
-            class="text-4xl font-extrabold font-headline tracking-tighter text-on-surface"
-          >
-            Overview Monitoring
-          </h2>
-          <p class="text-on-surface-variant font-body mt-1">
-            Real-time performance metrics and utility project throughput.
+      <div class="mb-8">
+        <h2
+          class="text-4xl font-extrabold font-headline tracking-tighter text-on-surface"
+        >
+          Monitoring Proses Bisnis
+        </h2>
+        <p class="text-on-surface-variant font-body mt-1">
+          Status real-time berdasarkan 7 tahapan alur integrasi sistem.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-4 gap-4 mb-8">
+        <div
+          class="bg-white p-5 rounded-xl border border-outline-variant/20 shadow-sm"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <span
+              class="text-[10px] font-black text-blue-600 uppercase tracking-widest"
+              >Permohonan PB / PD</span
+            >
+            <span class="material-symbols-outlined text-blue-400 text-lg"
+              >person_add</span
+            >
+          </div>
+          <h3 class="text-2xl font-black text-on-surface">142</h3>
+          <p class="text-[9px] text-slate-500 mt-1 italic">
+            Pelayanan Pelanggan
           </p>
         </div>
-        <div class="flex gap-3">
-          <button
-            class="px-4 py-2 bg-white border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-surface-container-low transition-colors flex items-center gap-2"
-          >
+        <div
+          class="bg-white p-5 rounded-xl border border-outline-variant/20 shadow-sm"
+        >
+          <div class="flex justify-between items-center mb-2">
             <span
-              class="material-symbols-outlined text-lg"
-              data-icon="calendar_today"
-              >calendar_today</span
+              class="text-[10px] font-black text-indigo-600 uppercase tracking-widest"
+              >Survei</span
             >
-            Last 30 Days
-          </button>
-          <button
-            class="px-6 py-2 bg-primary text-white rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:bg-primary-container transition-all flex items-center gap-2"
-          >
-            <span class="material-symbols-outlined text-lg" data-icon="download"
-              >download</span
+            <span class="material-symbols-outlined text-indigo-400 text-lg"
+              >explore</span
             >
-            Export Report
-          </button>
+          </div>
+          <h3 class="text-2xl font-black text-on-surface">56</h3>
+          <p class="text-[9px] text-slate-500 mt-1 italic">Teknik ULP</p>
+        </div>
+        <div
+          class="bg-white p-5 rounded-xl border border-outline-variant/20 shadow-sm"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <span
+              class="text-[10px] font-black text-orange-600 uppercase tracking-widest"
+              >Permohonan Perluasan Jaringan</span
+            >
+            <span class="material-symbols-outlined text-orange-400 text-lg"
+              >account_tree</span
+            >
+          </div>
+          <h3 class="text-2xl font-black text-on-surface">24</h3>
+          <p class="text-[9px] text-slate-500 mt-1 italic">Niaga & Pemasaran</p>
+        </div>
+        <div
+          class="bg-white p-5 rounded-xl border border-outline-variant/20 shadow-sm"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <span
+              class="text-[10px] font-black text-purple-600 uppercase tracking-widest"
+              >Perencanaan Perluasan Jaringan</span
+            >
+            <span class="material-symbols-outlined text-purple-400 text-lg"
+              >calculate</span
+            >
+          </div>
+          <h3 class="text-2xl font-black text-on-surface">38</h3>
+          <p class="text-[9px] text-slate-500 mt-1 italic">Perencanaan UP3</p>
+        </div>
+        <div
+          class="bg-white p-5 rounded-xl border border-outline-variant/20 shadow-sm"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <span
+              class="text-[10px] font-black text-cyan-600 uppercase tracking-widest"
+              >Pra Pelaksanaan Konstruksi</span
+            >
+            <span class="material-symbols-outlined text-cyan-400 text-lg"
+              >engineering</span
+            >
+          </div>
+          <h3 class="text-2xl font-black text-on-surface">19</h3>
+          <p class="text-[9px] text-slate-500 mt-1 italic">Konstruksi</p>
+        </div>
+        <div
+          class="bg-white p-5 rounded-xl border border-outline-variant/20 shadow-sm"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <span
+              class="text-[10px] font-black text-emerald-600 uppercase tracking-widest"
+              >Pelaksanaan Konstruksi</span
+            >
+            <span class="material-symbols-outlined text-emerald-400 text-lg"
+              >bolt</span
+            >
+          </div>
+          <h3 class="text-2xl font-black text-on-surface">67</h3>
+          <p class="text-[9px] text-slate-500 mt-1 italic">Jaringan</p>
+        </div>
+        <div
+          class="bg-white p-5 rounded-xl border border-outline-variant/20 shadow-sm"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <span
+              class="text-[10px] font-black text-blue-900 uppercase tracking-widest"
+              >Energize Jaringan</span
+            >
+            <span class="material-symbols-outlined text-blue-900 text-lg"
+              >settings_input_component</span
+            >
+          </div>
+          <h3 class="text-2xl font-black text-on-surface">82</h3>
+          <p class="text-[9px] text-slate-500 mt-1 italic">Pemasangan Meter</p>
+        </div>
+        <div
+          class="bg-primary p-5 rounded-xl border border-primary/10 shadow-lg shadow-primary/10"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <span
+              class="text-[10px] font-black text-white/70 uppercase tracking-widest"
+              >Total Active</span
+            >
+            <span class="material-symbols-outlined text-white/50 text-lg"
+              >monitoring</span
+            >
+          </div>
+          <h3 class="text-2xl font-black text-white">428</h3>
+          <p class="text-[9px] text-white/60 mt-1 italic">All Stages</p>
         </div>
       </div>
-      <!-- KPI Cards Grid (The Precision Engine: Asymmetric Padding) -->
-      <div class="grid grid-cols-4 gap-6 mb-8">
+
+      <div
+        class="bg-white rounded-xl border border-outline-variant/10 overflow-hidden mb-12 shadow-sm"
+      >
         <div
-          class="bg-surface-container-lowest p-6 pl-8 pr-10 rounded-xl border border-outline-variant/10 flex flex-col justify-between"
+          class="px-8 py-6 border-b border-outline-variant/5 flex justify-between items-center"
         >
-          <div>
-            <div class="flex justify-between items-start mb-4">
-              <span class="p-2 bg-blue-50 text-primary rounded-lg">
-                <span class="material-symbols-outlined" data-icon="assignment"
-                  >assignment</span
-                >
-              </span>
-              <span
-                class="text-xs font-bold text-emerald-600 flex items-center gap-1"
-              >
-                <span
-                  class="material-symbols-outlined text-[14px]"
-                  data-icon="trending_up"
-                  >trending_up</span
-                >
-                12%
-              </span>
-            </div>
-            <p
-              class="text-on-surface-variant text-sm font-medium uppercase tracking-wider"
-            >
-              Total Requests
-            </p>
-            <h3 class="text-3xl font-black font-headline text-on-surface mt-1">
-              1,482
-            </h3>
-          </div>
-          <div
-            class="mt-4 h-1 bg-surface-container rounded-full overflow-hidden"
-          >
-            <div class="h-full bg-primary w-3/4"></div>
-          </div>
+          <h4 class="text-xl font-extrabold font-headline">
+            Daftar Progress Per Unit
+          </h4>
         </div>
-        <div
-          class="bg-surface-container-lowest p-6 pl-8 pr-10 rounded-xl border border-outline-variant/10 flex flex-col justify-between"
-        >
-          <div>
-            <div class="flex justify-between items-start mb-4">
-              <span class="p-2 bg-orange-50 text-orange-600 rounded-lg">
-                <span class="material-symbols-outlined" data-icon="sync"
-                  >sync</span
-                >
-              </span>
-              <span class="text-xs font-bold text-slate-400"
-                >Current active</span
+        <table class="w-full text-left">
+          <thead class="bg-slate-50">
+            <tr>
+              <th
+                class="px-8 py-4 text-[11px] font-black uppercase text-on-surface-variant"
               >
-            </div>
-            <p
-              class="text-on-surface-variant text-sm font-medium uppercase tracking-wider"
-            >
-              On-progress Projects
-            </p>
-            <h3 class="text-3xl font-black font-headline text-on-surface mt-1">
-              645
-            </h3>
-          </div>
-          <div class="mt-4 flex gap-1 h-1">
-            <div class="flex-1 bg-orange-200"></div>
-            <div class="flex-1 bg-orange-300"></div>
-            <div class="flex-1 bg-orange-500"></div>
-            <div class="flex-1 bg-orange-100"></div>
-          </div>
-        </div>
-        <div
-          class="bg-surface-container-lowest p-6 pl-8 pr-10 rounded-xl border border-outline-variant/10 flex flex-col justify-between"
-        >
-          <div>
-            <div class="flex justify-between items-start mb-4">
-              <span class="p-2 bg-emerald-50 text-emerald-600 rounded-lg">
-                <span
-                  class="material-symbols-outlined"
-                  data-icon="bolt"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >bolt</span
-                >
-              </span>
-              <span
-                class="text-xs font-bold text-emerald-600 flex items-center gap-1"
+                Project ID
+              </th>
+              <th
+                class="px-8 py-4 text-[11px] font-black uppercase text-on-surface-variant"
               >
-                <span
-                  class="material-symbols-outlined text-[14px]"
-                  data-icon="check_circle"
-                  >check_circle</span
-                >
-                Target met
-              </span>
-            </div>
-            <p
-              class="text-on-surface-variant text-sm font-medium uppercase tracking-wider"
-            >
-              Completed (Energized)
-            </p>
-            <h3 class="text-3xl font-black font-headline text-on-surface mt-1">
-              812
-            </h3>
-          </div>
-          <div class="mt-4 h-8 flex items-end gap-[2px]">
-            <div class="w-full bg-emerald-100 h-2"></div>
-            <div class="w-full bg-emerald-200 h-4"></div>
-            <div class="w-full bg-emerald-300 h-3"></div>
-            <div class="w-full bg-emerald-400 h-6"></div>
-            <div class="w-full bg-emerald-500 h-8"></div>
-          </div>
-        </div>
-        <div
-          class="bg-error-container/30 p-6 pl-8 pr-10 rounded-xl border border-error/10 flex flex-col justify-between"
-        >
-          <div>
-            <div class="flex justify-between items-start mb-4">
-              <span class="p-2 bg-white text-error rounded-lg shadow-sm">
-                <span
-                  class="material-symbols-outlined"
-                  data-icon="warning"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >warning</span
-                >
-              </span>
-              <span class="text-xs font-black text-error">CRITICAL</span>
-            </div>
-            <p
-              class="text-on-error-container text-sm font-medium uppercase tracking-wider"
-            >
-              Delayed Processes
-            </p>
-            <h3 class="text-3xl font-black font-headline text-error mt-1">
-              24
-            </h3>
-          </div>
-          <p
-            class="mt-4 text-[11px] font-bold text-error/70 flex items-center gap-1"
-          >
-            <span
-              class="material-symbols-outlined text-[12px]"
-              data-icon="error_outline"
-              >error_outline</span
-            >
-            Requires immediate supervisor attention
-          </p>
-        </div>
-      </div>
-      <!-- Bento Grid Main Content -->
-      <div class="grid grid-cols-12 gap-6 items-start">
-        <!-- Process Chart (Editorial Authority) -->
-        <div
-          class="col-span-8 bg-surface-container-lowest rounded-xl border border-outline-variant/10 p-8"
-        >
-          <div class="flex justify-between items-center mb-10">
-            <div>
-              <h4 class="text-xl font-extrabold font-headline tracking-tight">
-                Stage Duration Analysis
-              </h4>
-              <p class="text-on-surface-variant text-sm">
-                Average number of days spent per project milestone
-              </p>
-            </div>
-            <div class="flex gap-2">
-              <div
-                class="flex items-center gap-2 px-3 py-1 bg-surface-container-low rounded-md"
+                Pelanggan
+              </th>
+              <th
+                class="px-8 py-4 text-[11px] font-black uppercase text-on-surface-variant"
               >
-                <div class="w-2 h-2 rounded-full bg-primary"></div>
-                <span
-                  class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant"
-                  >Benchmark</span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="relative h-64 flex items-end justify-between px-4 pb-8">
-            <!-- Chart Background Lines -->
-            <div
-              class="absolute inset-0 border-b-2 border-outline-variant/20 flex flex-col justify-between pointer-events-none"
-            >
-              <div
-                class="w-full border-t border-dashed border-outline-variant/10"
-              ></div>
-              <div
-                class="w-full border-t border-dashed border-outline-variant/10"
-              ></div>
-              <div
-                class="w-full border-t border-dashed border-outline-variant/10"
-              ></div>
-            </div>
-            <!-- REQ -->
-            <div
-              class="flex flex-col items-center gap-4 group cursor-pointer w-20"
-            >
-              <div
-                class="relative w-12 bg-primary/10 rounded-t-sm group-hover:bg-primary/20 transition-all h-16 flex items-end justify-center"
+                ULP
+              </th>
+              <th
+                class="px-8 py-4 text-[11px] font-black uppercase text-on-surface-variant"
               >
-                <div class="w-full bg-primary h-12"></div>
-                <span class="absolute -top-6 text-xs font-black text-primary"
-                  >3.2d</span
-                >
-              </div>
-              <span
-                class="text-[10px] font-black tracking-widest uppercase text-on-surface-variant"
-                >Request</span
+                Tahap Saat Ini
+              </th>
+              <th
+                class="px-8 py-4 text-[11px] font-black uppercase text-on-surface-variant text-right"
               >
-            </div>
-            <!-- PLAN -->
-            <div
-              class="flex flex-col items-center gap-4 group cursor-pointer w-20"
-            >
-              <div
-                class="relative w-12 bg-primary/10 rounded-t-sm group-hover:bg-primary/20 transition-all h-32 flex items-end justify-center"
-              >
-                <div class="w-full bg-primary h-24"></div>
-                <span class="absolute -top-6 text-xs font-black text-primary"
-                  >8.5d</span
-                >
-              </div>
-              <span
-                class="text-[10px] font-black tracking-widest uppercase text-on-surface-variant"
-                >Planning</span
-              >
-            </div>
-            <!-- PAY -->
-            <div
-              class="flex flex-col items-center gap-4 group cursor-pointer w-20"
-            >
-              <div
-                class="relative w-12 bg-primary/10 rounded-t-sm group-hover:bg-primary/20 transition-all h-12 flex items-end justify-center"
-              >
-                <div class="w-full bg-primary h-8"></div>
-                <span class="absolute -top-6 text-xs font-black text-primary"
-                  >2.1d</span
-                >
-              </div>
-              <span
-                class="text-[10px] font-black tracking-widest uppercase text-on-surface-variant"
-                >Payment</span
-              >
-            </div>
-            <!-- BUILD -->
-            <div
-              class="flex flex-col items-center gap-4 group cursor-pointer w-20"
-            >
-              <div
-                class="relative w-12 bg-primary/10 rounded-t-sm group-hover:bg-primary/20 transition-all h-48 flex items-end justify-center"
-              >
-                <div class="w-full bg-primary h-40"></div>
-                <span class="absolute -top-6 text-xs font-black text-primary"
-                  >14.2d</span
-                >
-              </div>
-              <span
-                class="text-[10px] font-black tracking-widest uppercase text-on-surface-variant"
-                >Construction</span
-              >
-            </div>
-            <!-- ENERGIZE -->
-            <div
-              class="flex flex-col items-center gap-4 group cursor-pointer w-20"
-            >
-              <div
-                class="relative w-12 bg-primary/10 rounded-t-sm group-hover:bg-primary/20 transition-all h-20 flex items-end justify-center"
-              >
-                <div class="w-full bg-primary h-14"></div>
-                <span class="absolute -top-6 text-xs font-black text-primary"
-                  >4.8d</span
-                >
-              </div>
-              <span
-                class="text-[10px] font-black tracking-widest uppercase text-on-surface-variant"
-                >Energize</span
-              >
-            </div>
-          </div>
-        </div>
-        <!-- Alert Section (Tonal Layering) -->
-        <div class="col-span-4 space-y-4">
-          <div
-            class="bg-on-background text-white p-6 rounded-xl relative overflow-hidden"
-          >
-            <div class="relative z-10">
-              <h4
-                class="text-sm font-bold text-primary-fixed-dim uppercase tracking-widest mb-4"
-              >
-                Critical Alerts
-              </h4>
-              <div class="space-y-4">
-                <div class="p-3 bg-white/5 rounded-lg border-l-4 border-error">
-                  <p class="text-xs font-bold text-error uppercase mb-1">
-                    Stuck &gt; 15 Days
-                  </p>
-                  <p class="text-sm font-medium">
-                    PRJ-2491: Riverside Substation Extension
-                  </p>
-                  <p class="text-[11px] text-white/50 mt-2">
-                    Currently at: <span class="text-white">Planning</span>
-                  </p>
+                Aksi
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr class="hover:bg-blue-50/30 transition-colors">
+              <td class="px-8 py-5">
+                <span class="font-bold text-primary">#PLN-8821</span>
+              </td>
+              <td class="px-8 py-5 font-semibold">Global Tech Corp</td>
+              <td class="px-8 py-5 font-semibold">ULP RUNGKUT</td>
+              <td class="px-8 py-5">
+                <div class="flex items-center gap-2">
+                  <div class="w-2 h-2 rounded-full bg-cyan-500"></div>
+                  <span class="text-sm font-medium uppercase text-xs"
+                    >Pra Pelaksanaan Konstruksi</span
+                  >
                 </div>
-                <div class="p-3 bg-white/5 rounded-lg border-l-4 border-error">
-                  <p class="text-xs font-bold text-error uppercase mb-1">
-                    Stuck &gt; 12 Days
-                  </p>
-                  <p class="text-sm font-medium">
-                    PRJ-2503: Horizon Office Complex
-                  </p>
-                  <p class="text-[11px] text-white/50 mt-2">
-                    Currently at:
-                    <span class="text-white">Request Validation</span>
-                  </p>
+              </td>
+              <td class="px-8 py-5 text-right">
+                <button
+                  class="material-symbols-outlined text-slate-300 hover:text-primary"
+                >
+                  more_vert
+                </button>
+              </td>
+            </tr>
+            <tr class="hover:bg-blue-50/30 transition-colors">
+              <td class="px-8 py-5">
+                <span class="font-bold text-primary">#PLN-8819</span>
+              </td>
+              <td class="px-8 py-5 font-semibold">Lakeside Estates</td>
+              <td class="px-8 py-5 font-semibold">ULP TAMAN</td>
+              <td class="px-8 py-5">
+                <div class="flex items-center gap-2">
+                  <div class="w-2 h-2 rounded-full bg-indigo-500"></div>
+                  <span class="text-sm font-medium uppercase text-xs"
+                    >Perencanaan Perluasan Jaringan</span
+                  >
                 </div>
-              </div>
-              <button
-                class="w-full mt-6 py-2 bg-white/10 hover:bg-white/20 rounded text-xs font-bold transition-colors"
-              >
-                View All Blocked Projects
-              </button>
-            </div>
-            <!-- Decorative Element -->
-            <div class="absolute -right-10 -bottom-10 opacity-10">
-              <span
-                class="material-symbols-outlined text-[120px]"
-                data-icon="error"
-                >error</span
-              >
-            </div>
-          </div>
-          <div class="bg-surface-container-highest p-6 rounded-xl">
-            <h4
-              class="text-xs font-black text-on-surface-variant uppercase tracking-widest mb-4"
-            >
-              Resource Allocation
-            </h4>
-            <div class="space-y-4">
-              <div class="flex justify-between items-center">
-                <span class="text-xs font-semibold">Field Engineers</span>
-                <span class="text-xs font-bold">92%</span>
-              </div>
-              <div
-                class="h-1.5 w-full bg-surface-dim rounded-full overflow-hidden"
-              >
-                <div class="h-full bg-primary w-[92%]"></div>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-xs font-semibold">Survey Teams</span>
-                <span class="text-xs font-bold">45%</span>
-              </div>
-              <div
-                class="h-1.5 w-full bg-surface-dim rounded-full overflow-hidden"
-              >
-                <div class="h-full bg-primary w-[45%]"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Table Section (The No-Line Rule) -->
-        <div
-          class="col-span-12 bg-surface-container-lowest rounded-xl border border-outline-variant/10 overflow-hidden mb-12"
-        >
-          <div
-            class="px-8 py-6 border-b border-outline-variant/5 flex justify-between items-center"
-          >
-            <h4 class="text-xl font-extrabold font-headline tracking-tight">
-              Latest Project Updates
-            </h4>
-            <div class="flex items-center gap-4">
-              <div
-                class="text-[10px] font-bold text-on-surface-variant flex items-center gap-2"
-              >
-                <span class="w-2 h-2 rounded-full bg-emerald-500"></span> ACTIVE
-              </div>
-              <div
-                class="text-[10px] font-bold text-on-surface-variant flex items-center gap-2"
-              >
-                <span class="w-2 h-2 rounded-full bg-amber-500"></span> ON HOLD
-              </div>
-            </div>
-          </div>
-          <table class="w-full text-left">
-            <thead class="bg-surface-container-low">
-              <tr>
-                <th
-                  class="px-8 py-4 text-[11px] font-black uppercase tracking-widest text-on-surface-variant"
+              </td>
+              <td class="px-8 py-5 text-right">
+                <button
+                  class="material-symbols-outlined text-slate-300 hover:text-primary"
                 >
-                  Project ID
-                </th>
-                <th
-                  class="px-8 py-4 text-[11px] font-black uppercase tracking-widest text-on-surface-variant"
-                >
-                  Customer
-                </th>
-                <th
-                  class="px-8 py-4 text-[11px] font-black uppercase tracking-widest text-on-surface-variant"
-                >
-                  Current Stage
-                </th>
-                <th
-                  class="px-8 py-4 text-[11px] font-black uppercase tracking-widest text-on-surface-variant text-center"
-                >
-                  Status
-                </th>
-                <th
-                  class="px-8 py-4 text-[11px] font-black uppercase tracking-widest text-on-surface-variant text-right"
-                >
-                  Actions
-                </th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-outline-variant/5">
-              <tr
-                class="hover:bg-secondary-container/20 transition-colors group cursor-pointer"
-                onclick="window.location = 'project-detail.html'"
-              >
-                <td class="px-8 py-5">
-                  <span class="font-bold text-primary">#PRJ-8821</span>
-                  <p class="text-[10px] text-on-surface-variant mt-1">
-                    High Voltage Line
-                  </p>
-                </td>
-                <td class="px-8 py-5">
-                  <span class="font-semibold text-on-surface"
-                    >Global Tech Corp.</span
-                  >
-                </td>
-                <td class="px-8 py-5">
-                  <div class="flex items-center gap-2">
-                    <div class="w-2 h-2 rounded-full bg-primary"></div>
-                    <span class="text-sm font-medium"
-                      >BUILD (Construction)</span
-                    >
-                  </div>
-                </td>
-                <td class="px-8 py-5 text-center">
-                  <span
-                    class="px-3 py-1 bg-emerald-100 text-emerald-800 text-[10px] font-bold rounded-full"
-                    >ENERGIZED</span
-                  >
-                </td>
-                <td class="px-8 py-5 text-right">
-                  <button
-                    class="text-on-surface-variant hover:text-primary transition-colors"
-                  >
-                    <span
-                      class="material-symbols-outlined"
-                      data-icon="more_vert"
-                      >more_vert</span
-                    >
-                  </button>
-                </td>
-              </tr>
-              <tr
-                class="hover:bg-secondary-container/20 transition-colors group cursor-pointer"
-                onclick="window.location = 'project-detail.html'"
-              >
-                <td class="px-8 py-5">
-                  <span class="font-bold text-primary">#PRJ-8819</span>
-                  <p class="text-[10px] text-on-surface-variant mt-1">
-                    New Residential Grid
-                  </p>
-                </td>
-                <td class="px-8 py-5">
-                  <span class="font-semibold text-on-surface"
-                    >Lakeside Estates</span
-                  >
-                </td>
-                <td class="px-8 py-5">
-                  <div class="flex items-center gap-2">
-                    <div class="w-2 h-2 rounded-full bg-amber-500"></div>
-                    <span class="text-sm font-medium"
-                      >PAY (Payment Pending)</span
-                    >
-                  </div>
-                </td>
-                <td class="px-8 py-5 text-center">
-                  <span
-                    class="px-3 py-1 bg-amber-100 text-amber-800 text-[10px] font-bold rounded-full"
-                    >PENDING</span
-                  >
-                </td>
-                <td class="px-8 py-5 text-right">
-                  <button
-                    class="text-on-surface-variant hover:text-primary transition-colors"
-                  >
-                    <span
-                      class="material-symbols-outlined"
-                      data-icon="more_vert"
-                      >more_vert</span
-                    >
-                  </button>
-                </td>
-              </tr>
-              <tr
-                class="hover:bg-secondary-container/20 transition-colors group cursor-pointer"
-                onclick="window.location = 'project-detail.html'"
-              >
-                <td class="px-8 py-5">
-                  <span class="font-bold text-primary">#PRJ-8790</span>
-                  <p class="text-[10px] text-on-surface-variant mt-1">
-                    Solar Farm Integration
-                  </p>
-                </td>
-                <td class="px-8 py-5">
-                  <span class="font-semibold text-on-surface"
-                    >Eco-Watts Inc.</span
-                  >
-                </td>
-                <td class="px-8 py-5">
-                  <div class="flex items-center gap-2">
-                    <div class="w-2 h-2 rounded-full bg-primary"></div>
-                    <span class="text-sm font-medium">PLAN (Blueprints)</span>
-                  </div>
-                </td>
-                <td class="px-8 py-5 text-center">
-                  <span
-                    class="px-3 py-1 bg-blue-100 text-blue-800 text-[10px] font-bold rounded-full"
-                    >PROCESSING</span
-                  >
-                </td>
-                <td class="px-8 py-5 text-right">
-                  <button
-                    class="text-on-surface-variant hover:text-primary transition-colors"
-                  >
-                    <span
-                      class="material-symbols-outlined"
-                      data-icon="more_vert"
-                      >more_vert</span
-                    >
-                  </button>
-                </td>
-              </tr>
-              <tr
-                class="hover:bg-secondary-container/20 transition-colors group cursor-pointer"
-                onclick="window.location = 'project-detail.html'"
-              >
-                <td class="px-8 py-5">
-                  <span class="font-bold text-primary">#PRJ-8785</span>
-                  <p class="text-[10px] text-on-surface-variant mt-1">
-                    Industrial Substation
-                  </p>
-                </td>
-                <td class="px-8 py-5">
-                  <span class="font-semibold text-on-surface"
-                    >Steel Manufacturing</span
-                  >
-                </td>
-                <td class="px-8 py-5">
-                  <div class="flex items-center gap-2">
-                    <div class="w-2 h-2 rounded-full bg-error"></div>
-                    <span class="text-sm font-medium">REQ (Validation)</span>
-                  </div>
-                </td>
-                <td class="px-8 py-5 text-center">
-                  <span
-                    class="px-3 py-1 bg-error-container text-error text-[10px] font-bold rounded-full"
-                    >DELAYED</span
-                  >
-                </td>
-                <td class="px-8 py-5 text-right">
-                  <button
-                    class="text-on-surface-variant hover:text-primary transition-colors"
-                  >
-                    <span
-                      class="material-symbols-outlined"
-                      data-icon="more_vert"
-                      >more_vert</span
-                    >
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                  more_vert
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
-    <!-- Footer -->
+
     <footer
-      class="fixed bottom-0 right-0 w-[calc(100%-16rem)] py-4 bg-slate-50 dark:bg-slate-900 flex justify-between items-center px-8 border-t border-slate-200 dark:border-slate-800 text-slate-500 font-inter text-xs uppercase tracking-widest z-40"
+      class="fixed bottom-0 right-0 w-[calc(100%-16rem)] py-4 bg-white px-8 border-t border-slate-200 text-slate-400 text-[10px] uppercase tracking-widest z-40 flex justify-between"
     >
-      <div class="flex items-center gap-6">
-        <span class="font-bold text-slate-400">LISSA Enterprise</span>
-        <div class="flex gap-4">
-          <a class="hover:text-blue-600 transition-colors" href="#"
-            >System Version 2.4.0</a
-          >
-          <a class="hover:text-blue-600 transition-colors" href="#"
-            >Privacy Policy</a
-          >
-          <a class="hover:text-blue-600 transition-colors" href="#"
-            >Terms of Service</a
-          >
-        </div>
-      </div>
-      <p>© 2024 LISSA Enterprise. All rights reserved.</p>
+      <span>LISSA Enterprise - System Monitoring v2.4</span>
+      <span>&copy; 2026 PT PLN (Persero)</span>
     </footer>
   </body>
 </html>
