@@ -217,12 +217,8 @@
             <h2
               class="text-4xl font-extrabold font-manrope text-on-background tracking-tighter leading-none"
             >
-              Progress Update
+              Update Progress
             </h2>
-            <p class="mt-2 text-on-surface-variant max-w-xl">
-              Log electrical grid installation milestones and synchronize field
-              status with the central management engine.
-            </p>
           </div>
           <div
             class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/15 text-right"
@@ -261,53 +257,14 @@
                 <select
                   class="w-full bg-surface-variant/30 border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 text-sm font-medium py-3 px-1 transition-all"
                 >
-                  <option>Site Assessment &amp; Mapping</option>
-                  <option>Structural Foundation Pouring</option>
-                  <option selected="">Cabling and Insulation Routing</option>
-                  <option>Transformer Module Installation</option>
-                  <option>Final Connectivity Testing</option>
+                  <option>Permohonan PB/PD</option>
+                  <option>Survei</option>
+                  <option>Permohonan Perluasan Jaringan</option>
+                  <option selected="">Perencanaan Perluasan</option>
+                  <option>Pra Pelaksanaan Konstruksi</option>
+                  <option>Pelasksanaan Konstruksi</option>
+                  <option>Energize Jaringan</option>
                 </select>
-              </div>
-              <!-- Status Toggle/Select -->
-              <div class="group">
-                <label
-                  class="block text-[10px] uppercase font-black tracking-widest text-on-surface-variant mb-2 group-focus-within:text-primary transition-colors"
-                  >Current Workflow Status</label
-                >
-                <div class="grid grid-cols-3 gap-3">
-                  <button
-                    class="flex flex-col items-center justify-center p-4 rounded-xl border border-outline-variant/30 hover:border-blue-400 hover:bg-blue-50/50 transition-all group/status"
-                    type="button"
-                  >
-                    <span class="material-symbols-outlined text-blue-500 mb-1"
-                      >sync</span
-                    >
-                    <span class="text-xs font-bold">In Progress</span>
-                  </button>
-                  <button
-                    class="flex flex-col items-center justify-center p-4 rounded-xl border-2 border-primary bg-primary-fixed/30 transition-all"
-                    type="button"
-                  >
-                    <span
-                      class="material-symbols-outlined text-primary mb-1"
-                      style="font-variation-settings: &quot;FILL&quot; 1"
-                      >check_circle</span
-                    >
-                    <span
-                      class="text-xs font-bold text-on-primary-fixed-variant"
-                      >Completed</span
-                    >
-                  </button>
-                  <button
-                    class="flex flex-col items-center justify-center p-4 rounded-xl border border-outline-variant/30 hover:border-error/40 hover:bg-error-container/20 transition-all group/status"
-                    type="button"
-                  >
-                    <span class="material-symbols-outlined text-error mb-1"
-                      >warning</span
-                    >
-                    <span class="text-xs font-bold">Delayed</span>
-                  </button>
-                </div>
               </div>
               <!-- Technical Notes -->
               <div class="group">
@@ -327,14 +284,8 @@
                   class="flex-1 bg-gradient-to-br from-primary to-primary-container text-white py-4 px-6 rounded-xl font-bold font-manrope shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2"
                   type="submit"
                 >
-                  Commit Update to Central Ledger
+                  Submit Progress
                   <span class="material-symbols-outlined">send</span>
-                </button>
-                <button
-                  class="px-6 py-4 rounded-xl font-bold font-manrope text-outline hover:text-on-surface hover:bg-surface-variant/50 transition-all"
-                  type="button"
-                >
-                  Cancel
                 </button>
               </div>
             </form>
@@ -398,90 +349,6 @@
                   >
                 </div>
               </div>
-            </div>
-            <!-- Workflow Progress Visualizer -->
-            <div
-              class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm border border-outline-variant/15"
-            >
-              <h4 class="text-sm font-bold font-manrope mb-6">
-                Workflow Trajectory
-              </h4>
-              <div
-                class="relative pl-6 space-y-8 before:content-[''] before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-[2px] before:bg-primary-fixed-dim"
-              >
-                <div class="relative">
-                  <div
-                    class="absolute -left-[20px] top-1 w-[10px] h-[10px] rounded-full bg-primary ring-4 ring-primary-fixed/40"
-                  ></div>
-                  <p
-                    class="text-[10px] uppercase font-black tracking-widest text-primary leading-none mb-1"
-                  >
-                    Current State
-                  </p>
-                  <p class="text-xs font-bold">
-                    Cabling and Insulation Routing
-                  </p>
-                  <p class="text-[10px] text-outline">
-                    Stage 3 of 5 • 62% Total Progress
-                  </p>
-                </div>
-                <div class="relative opacity-40">
-                  <div
-                    class="absolute -left-[20px] top-1 w-[10px] h-[10px] rounded-full bg-outline-variant"
-                  ></div>
-                  <p
-                    class="text-[10px] uppercase font-black tracking-widest text-on-surface-variant leading-none mb-1"
-                  >
-                    Next Step
-                  </p>
-                  <p class="text-xs font-bold">
-                    Transformer Module Installation
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Micro-Sparkline KPI -->
-            <div
-              class="bg-gradient-to-r from-on-secondary-fixed to-secondary p-6 rounded-2xl shadow-lg relative overflow-hidden"
-            >
-              <div class="relative z-10">
-                <p
-                  class="text-[10px] uppercase font-black tracking-widest text-secondary-fixed-dim mb-4"
-                >
-                  Site Efficiency
-                </p>
-                <div class="flex items-end justify-between gap-4">
-                  <div>
-                    <h5
-                      class="text-3xl font-black text-white font-manrope leading-none"
-                    >
-                      94.8%
-                    </h5>
-                    <p class="text-[10px] text-secondary-fixed mt-1">
-                      +2.4% from average
-                    </p>
-                  </div>
-                  <div class="flex items-end gap-1 h-12">
-                    <div
-                      class="w-1.5 h-4 bg-tertiary-fixed-dim/40 rounded-full"
-                    ></div>
-                    <div
-                      class="w-1.5 h-6 bg-tertiary-fixed-dim/60 rounded-full"
-                    ></div>
-                    <div
-                      class="w-1.5 h-10 bg-tertiary-fixed-dim/80 rounded-full"
-                    ></div>
-                    <div class="w-1.5 h-7 bg-tertiary rounded-full"></div>
-                    <div
-                      class="w-1.5 h-12 bg-tertiary rounded-full shadow-[0_0_8px_rgba(121,58,0,0.5)]"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Background Pattern -->
-              <div
-                class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 blur-3xl"
-              ></div>
             </div>
           </div>
         </div>
