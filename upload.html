@@ -85,75 +85,122 @@
     </script>
     <style>
       .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
         vertical-align: middle;
       }
-      body { font-family: "Inter", sans-serif; }
-      h1, h2, h3 { font-family: "Manrope", sans-serif; }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Manrope", sans-serif;
+      }
     </style>
   </head>
-  <body class="bg-surface-container-low text-on-surface antialiased min-h-screen">
+  <body
+    class="bg-surface-container-low text-on-surface antialiased min-h-screen"
+  >
     <!-- SideNavBar -->
-    <aside class="fixed left-0 top-0 h-full w-64 bg-slate-100 dark:bg-slate-900 flex flex-col py-6 transition-all duration-200 ease-in-out z-50">
+    <aside
+      class="fixed left-0 top-0 h-full w-64 bg-slate-100 dark:bg-slate-900 flex flex-col py-6 transition-all duration-200 ease-in-out z-50"
+    >
       <div class="px-6 mb-10">
         <a href="dashboard.html" class="flex items-center gap-3">
-          <img src="logo-lissa.png" alt="LISSA Logo" class="w-10 h-10 rounded-lg object-contain" />
+          <img
+            src="logo-lissa.png"
+            alt="LISSA Logo"
+            class="w-10 h-10 rounded-lg object-contain"
+          />
           <div>
-            <h1 class="text-2xl font-black text-blue-900 dark:text-white tracking-tighter">LISSA</h1>
-            <p class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Utility Management</p>
+            <h1
+              class="text-2xl font-black text-blue-900 dark:text-white tracking-tighter"
+            >
+              LISSA
+            </h1>
+            <p
+              class="text-[10px] uppercase tracking-widest text-slate-500 font-bold"
+            >
+              Utility Management
+            </p>
           </div>
         </a>
       </div>
       <nav class="flex-1 space-y-1">
-        <a class="flex items-center gap-3 text-slate-600 dark:text-slate-400 pl-5 py-3 font-manrope tracking-tight text-sm hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-700 transition-all duration-200 ease-in-out" href="dashboard.html">
+        <a
+          class="flex items-center gap-3 text-slate-600 dark:text-slate-400 pl-5 py-3 font-manrope tracking-tight text-sm hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-700 transition-all duration-200 ease-in-out"
+          href="dashboard.html"
+        >
           <span class="material-symbols-outlined">dashboard</span> Dashboard
         </a>
-        <a class="flex items-center gap-3 text-slate-600 dark:text-slate-400 pl-5 py-3 font-manrope tracking-tight text-sm hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-700 transition-all duration-200 ease-in-out" href="project-list.html">
-          <span class="material-symbols-outlined">list_alt</span> Project List
-        </a>
-        <a class="flex items-center gap-3 text-slate-600 dark:text-slate-400 pl-5 py-3 font-manrope tracking-tight text-sm hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-700 transition-all duration-200 ease-in-out" href="progress.html">
-          <span class="material-symbols-outlined">speed</span> Progress Update
-        </a>
-        <a class="flex items-center gap-3 text-slate-600 dark:text-slate-400 pl-5 py-3 font-manrope tracking-tight text-sm hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-700 transition-all duration-200 ease-in-out" href="report.html">
-          <span class="material-symbols-outlined">assessment</span> Reports
-        </a>
-        <a class="flex items-center gap-3 text-blue-800 dark:text-blue-300 font-bold border-l-4 border-blue-700 dark:border-blue-400 pl-4 py-3 bg-blue-50/50 dark:bg-blue-900/20 font-manrope tracking-tight text-sm transition-all duration-200 ease-in-out" href="upload.html">
-          <span class="material-symbols-outlined">cloud_upload</span> Evidence Upload
+        <a
+          class="flex items-center gap-3 text-slate-600 dark:text-slate-400 pl-5 py-3 font-manrope tracking-tight text-sm hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-700 transition-all duration-200 ease-in-out"
+          href="project-list.html"
+        >
+          <span class="material-symbols-outlined">list_alt</span> Daftar
+          Permohonan
         </a>
       </nav>
       <div class="px-6 mt-auto">
-        <div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200/50 dark:border-slate-700/50">
-          <p class="text-xs font-bold text-slate-400 mb-2 uppercase">System Status</p>
-          <div class="flex items-center gap-2">
-            <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
-            <span class="text-xs font-semibold text-slate-700 dark:text-slate-300">All Systems Nominal</span>
-          </div>
-        </div>
-        <a href="login.html" class="flex items-center gap-2 mt-4 px-2 py-2 text-slate-500 hover:text-red-600 transition-colors text-xs font-semibold">
+        <a
+          href="login.html"
+          class="flex items-center gap-2 mt-4 px-2 py-2 text-slate-500 hover:text-red-600 transition-colors text-xs font-semibold"
+        >
           <span class="material-symbols-outlined text-lg">logout</span> Sign Out
         </a>
       </div>
     </aside>
     <!-- TopNavBar -->
-    <header class="fixed top-0 right-0 w-[calc(100%-16rem)] h-16 bg-white/70 dark:bg-slate-950/70 backdrop-blur-md flex items-center justify-between px-8 z-40 border-b border-slate-200/50 dark:border-slate-800/50">
+    <header
+      class="fixed top-0 right-0 w-[calc(100%-16rem)] h-16 bg-white/70 dark:bg-slate-950/70 backdrop-blur-md flex items-center justify-between px-8 z-40 border-b border-slate-200/50 dark:border-slate-800/50"
+    >
       <div class="flex items-center w-1/3">
         <div class="relative w-full max-w-md">
-          <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">search</span>
-          <input class="w-full bg-slate-100/50 dark:bg-slate-900/50 border-none rounded-full py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary/20 placeholder:text-slate-400" placeholder="Search projects, customers, or tickets..." type="text" />
+          <span
+            class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg"
+            >search</span
+          >
+          <input
+            class="w-full bg-slate-100/50 dark:bg-slate-900/50 border-none rounded-full py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary/20 placeholder:text-slate-400"
+            placeholder="Search projects, customers, or tickets..."
+            type="text"
+          />
         </div>
       </div>
       <div class="flex items-center gap-6">
         <div class="flex items-center gap-4 text-slate-500">
-          <button class="hover:text-blue-600 dark:hover:text-blue-300 transition-colors"><span class="material-symbols-outlined">notifications</span></button>
-          <button class="hover:text-blue-600 dark:hover:text-blue-300 transition-colors"><span class="material-symbols-outlined">help_outline</span></button>
+          <button
+            class="hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+          >
+            <span class="material-symbols-outlined">notifications</span>
+          </button>
+          <button
+            class="hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+          >
+            <span class="material-symbols-outlined">help_outline</span>
+          </button>
         </div>
         <div class="h-8 w-[1px] bg-slate-200 dark:bg-slate-800"></div>
         <div class="flex items-center gap-3">
           <div class="text-right">
-            <p class="text-sm font-bold text-slate-900 dark:text-white leading-tight">Sarah Jenkins</p>
-            <p class="text-[10px] text-slate-500 font-medium">Operations Manager</p>
+            <p
+              class="text-sm font-bold text-slate-900 dark:text-white leading-tight"
+            >
+              Sarah Jenkins
+            </p>
+            <p class="text-[10px] text-slate-500 font-medium">
+              Operations Manager
+            </p>
           </div>
-          <img alt="User Profile Avatar" class="w-10 h-10 rounded-full object-cover ring-2 ring-primary/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-ZFhIo7FtWDkAGG8GEnU486vgMZQNri3ZK0toL36LYp3hEoYbjPm6QmR7Qf8e1cxXFcww25WCHuWk_A6a1zRiBLeqyzuHGfe4T779CNu2bEBth9JWxfzyH9kio0zkwOm6PuMgoFB61787zbbZrFwbPn2BYQWDhLvk6t_2R_6vH-bz14d5NygJ0CrZ_ebXjMmNy7-aaSo-HssYJ26gWcIJiVFlkG1NJbIcs0UKY_TmBmCHcy740v-Da4x2GvJTp2GeYokM20qHABI" />
+          <img
+            alt="User Profile Avatar"
+            class="w-10 h-10 rounded-full object-cover ring-2 ring-primary/10"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-ZFhIo7FtWDkAGG8GEnU486vgMZQNri3ZK0toL36LYp3hEoYbjPm6QmR7Qf8e1cxXFcww25WCHuWk_A6a1zRiBLeqyzuHGfe4T779CNu2bEBth9JWxfzyH9kio0zkwOm6PuMgoFB61787zbbZrFwbPn2BYQWDhLvk6t_2R_6vH-bz14d5NygJ0CrZ_ebXjMmNy7-aaSo-HssYJ26gWcIJiVFlkG1NJbIcs0UKY_TmBmCHcy740v-Da4x2GvJTp2GeYokM20qHABI"
+          />
         </div>
       </div>
     </header>
@@ -163,156 +210,221 @@
         <!-- Breadcrumbs & Header -->
         <header class="flex justify-between items-end">
           <div>
-            <nav class="flex items-center gap-2 text-on-surface-variant text-xs mb-2 uppercase tracking-widest font-semibold">
-              <a href="project-list.html" class="hover:text-primary transition-colors">Projects</a>
-              <span class="material-symbols-outlined text-xs">chevron_right</span>
-              <a href="project-detail.html" class="hover:text-primary transition-colors">PRJ-2024-0892</a>
-              <span class="material-symbols-outlined text-xs">chevron_right</span>
+            <nav
+              class="flex items-center gap-2 text-on-surface-variant text-xs mb-2 uppercase tracking-widest font-semibold"
+            >
+              <a
+                href="project-list.html"
+                class="hover:text-primary transition-colors"
+                >Projects</a
+              >
+              <span class="material-symbols-outlined text-xs"
+                >chevron_right</span
+              >
+              <a
+                href="project-detail.html"
+                class="hover:text-primary transition-colors"
+                >PRJ-2024-0892</a
+              >
+              <span class="material-symbols-outlined text-xs"
+                >chevron_right</span
+              >
               <span class="text-primary">Evidence Upload</span>
             </nav>
             <h2 class="text-4xl font-extrabold tracking-tight text-on-surface">
-              Compliance Documentation
+              Evidence Documentation
             </h2>
-            <p class="text-on-surface-variant mt-2 max-w-2xl">
-              Upload high-resolution photographic evidence and technical PDF certifications for site inspection PRJ-2024-0892.
-            </p>
           </div>
           <div class="hidden lg:block">
-            <div class="bg-secondary-container/30 px-6 py-4 rounded-xl backdrop-blur-sm border border-outline-variant/10">
-              <p class="text-xs uppercase tracking-widest text-on-secondary-container font-bold mb-1">Project Status</p>
+            <div
+              class="bg-secondary-container/30 px-6 py-4 rounded-xl backdrop-blur-sm border border-outline-variant/10"
+            >
+              <p
+                class="text-xs uppercase tracking-widest text-on-secondary-container font-bold mb-1"
+              >
+                Project Status
+              </p>
               <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                <span class="text-lg font-headline font-bold text-primary">In Progress</span>
+                <span
+                  class="w-2 h-2 rounded-full bg-primary animate-pulse"
+                ></span>
+                <span class="text-lg font-headline font-bold text-primary"
+                  >In Progress</span
+                >
               </div>
             </div>
           </div>
         </header>
         <!-- Grid Layout -->
-        <div class="grid grid-cols-12 gap-8">
-          <!-- Upload Form Section (Left) -->
-          <div class="col-span-12 lg:col-span-5 space-y-6">
-            <section class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-outline-variant/5">
-              <h3 class="text-lg font-bold mb-6 flex items-center gap-2">
-                <span class="material-symbols-outlined text-primary">cloud_upload</span>
-                New Evidence Entry
-              </h3>
-              <form class="space-y-6">
-                <!-- Drag and Drop Zone -->
-                <div class="relative group">
-                  <div class="border-2 border-dashed border-outline-variant rounded-xl p-10 flex flex-col items-center justify-center bg-surface-container-low/30 hover:bg-secondary-container/10 transition-colors cursor-pointer group-hover:border-primary">
-                    <span class="material-symbols-outlined text-4xl text-outline-variant group-hover:text-primary transition-colors mb-4">upload_file</span>
-                    <p class="text-sm font-semibold text-on-surface">Drag and drop files here</p>
-                    <p class="text-xs text-on-surface-variant mt-1">Supports JPG, PNG, and PDF (Max 25MB)</p>
-                    <input class="absolute inset-0 opacity-0 cursor-pointer" type="file" />
-                  </div>
-                </div>
-                <div class="space-y-4">
-                  <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-2">Operational Stage</label>
-                    <select class="w-full bg-surface-container-low border-none border-b-2 border-outline-variant rounded-none focus:border-primary focus:ring-0 text-sm py-3 font-medium transition-all">
-                      <option>Initial Site Clearance</option>
-                      <option>Underground Cabling</option>
-                      <option>Transformer Installation</option>
-                      <option>Final Inspection &amp; Testing</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-2">Technical Notes</label>
-                    <textarea class="w-full bg-surface-container-low border-none border-b-2 border-outline-variant rounded-none focus:border-primary focus:ring-0 text-sm py-3 transition-all" placeholder="Detail any site variations or specific observations..." rows="4"></textarea>
-                  </div>
-                </div>
-                <button class="w-full py-4 bg-gradient-to-br from-primary to-primary-container text-white font-bold rounded-lg shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2" type="submit">
-                  <span class="material-symbols-outlined">publish</span>
-                  Submit Evidence Record
-                </button>
-              </form>
-            </section>
-          </div>
+        <div class=""">
           <!-- History Table Section (Right) -->
           <div class="col-span-12 lg:col-span-7">
-            <section class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/5 overflow-hidden flex flex-col h-full">
-              <div class="p-8 border-b border-outline-variant/10 flex justify-between items-center">
+            <section
+              class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/5 overflow-hidden flex flex-col h-full"
+            >
+              <div
+                class="p-8 border-b border-outline-variant/10 flex justify-between items-center"
+              >
                 <h3 class="text-lg font-bold flex items-center gap-2">
-                  <span class="material-symbols-outlined text-primary">history</span>
+                  <span class="material-symbols-outlined text-primary"
+                    >history</span
+                  >
                   Upload History
                 </h3>
-                <button class="text-xs font-bold text-primary hover:underline flex items-center gap-1">
-                  <span class="material-symbols-outlined text-sm">filter_list</span> Filter Logs
+                <button
+                  class="text-xs font-bold text-primary hover:underline flex items-center gap-1"
+                >
+                  <span class="material-symbols-outlined text-sm"
+                    >filter_list</span
+                  >
+                  Filter Logs
                 </button>
               </div>
               <div class="flex-1 overflow-x-auto">
                 <table class="w-full text-left border-collapse">
                   <thead>
                     <tr class="bg-surface-container-high/50">
-                      <th class="px-8 py-4 text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">File Name / Type</th>
-                      <th class="px-8 py-4 text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Stage</th>
-                      <th class="px-8 py-4 text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Uploader</th>
-                      <th class="px-8 py-4 text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Timestamp</th>
+                      <th
+                        class="px-8 py-4 text-[10px] uppercase tracking-widest font-bold text-on-surface-variant"
+                      >
+                        File Name / Type
+                      </th>
+                      <th
+                        class="px-8 py-4 text-[10px] uppercase tracking-widest font-bold text-on-surface-variant"
+                      >
+                        Stage
+                      </th>
+                      <th
+                        class="px-8 py-4 text-[10px] uppercase tracking-widest font-bold text-on-surface-variant"
+                      >
+                        Uploader
+                      </th>
+                      <th
+                        class="px-8 py-4 text-[10px] uppercase tracking-widest font-bold text-on-surface-variant"
+                      >
+                        Timestamp
+                      </th>
                     </tr>
                   </thead>
                   <tbody class="divide-y divide-outline-variant/10">
-                    <tr class="hover:bg-secondary-container transition-colors group">
+                    <tr
+                      class="hover:bg-secondary-container transition-colors group"
+                    >
                       <td class="px-8 py-5">
                         <div class="flex items-center gap-3">
-                          <span class="material-symbols-outlined text-primary">description</span>
+                          <span class="material-symbols-outlined text-primary"
+                            >description</span
+                          >
                           <div>
-                            <p class="text-sm font-bold">transformer_array_01.jpg</p>
-                            <p class="text-[10px] text-on-surface-variant">IMAGE • 4.2 MB</p>
+                            <p class="text-sm font-bold">
+                              permohonan-pb-pd.jpg
+                            </p>
+                            <p class="text-[10px] text-on-surface-variant">
+                              IMAGE • 4.2 MB
+                            </p>
                           </div>
                         </div>
                       </td>
-                      <td class="px-8 py-5"><span class="text-xs font-medium bg-surface-container-high px-2 py-1 rounded">Installation</span></td>
+                      <td class="px-8 py-5">
+                        <span
+                          class="text-xs font-medium bg-surface-container-high px-2 py-1 rounded"
+                          >Permohonan PB/PD</span
+                        >
+                      </td>
                       <td class="px-8 py-5">
                         <div class="flex items-center gap-2">
-                          <img class="w-6 h-6 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDsYMHF-GzemKSuYjqWo8unnJVm3fANYz8Z5ZFpntWwjNdx0MarFBhAPtK1q171mwJPANKvVVcpy0gLPHg_0AAWY6vnnxCuzrKmR3UKVjWu6n9np7WOmtrE1jjk5vzVDk5G53LrMuzhJHXlgMxA_grWSvEc9Nip2QdMM0bg5nIwOsIOrCU9IAwA5wrCTZsdIdO39UUklRr-UlNQS7902Dqa-LHKBpyp2PC6Es0h089OOqdAigiRswMd8FCaSo_xHL6zmGqyCfSgUM" />
-                          <span class="text-sm font-medium">David Chen</span>
+                          <img
+                            class="w-6 h-6 rounded-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDsYMHF-GzemKSuYjqWo8unnJVm3fANYz8Z5ZFpntWwjNdx0MarFBhAPtK1q171mwJPANKvVVcpy0gLPHg_0AAWY6vnnxCuzrKmR3UKVjWu6n9np7WOmtrE1jjk5vzVDk5G53LrMuzhJHXlgMxA_grWSvEc9Nip2QdMM0bg5nIwOsIOrCU9IAwA5wrCTZsdIdO39UUklRr-UlNQS7902Dqa-LHKBpyp2PC6Es0h089OOqdAigiRswMd8FCaSo_xHL6zmGqyCfSgUM"
+                          />
+                          <span class="text-sm font-medium">Pelayanan Pelanggan ULP</span>
                         </div>
                       </td>
-                      <td class="px-8 py-5 text-sm text-on-surface-variant">Oct 12, 09:14 AM</td>
+                      <td class="px-8 py-5 text-sm text-on-surface-variant">
+                        Oct 12, 09:14 AM
+                      </td>
                     </tr>
-                    <tr class="bg-surface-container-low hover:bg-secondary-container transition-colors group">
+                    <tr
+                      class="bg-surface-container-low hover:bg-secondary-container transition-colors group"
+                    >
                       <td class="px-8 py-5">
                         <div class="flex items-center gap-3">
-                          <span class="material-symbols-outlined text-error">picture_as_pdf</span>
+                          <span class="material-symbols-outlined text-error"
+                            >picture_as_pdf</span
+                          >
                           <div>
-                            <p class="text-sm font-bold">safety_cert_final.pdf</p>
-                            <p class="text-[10px] text-on-surface-variant">DOCUMENT • 1.8 MB</p>
+                            <p class="text-sm font-bold">
+                              survei.pdf
+                            </p>
+                            <p class="text-[10px] text-on-surface-variant">
+                              DOCUMENT • 1.8 MB
+                            </p>
                           </div>
                         </div>
                       </td>
-                      <td class="px-8 py-5"><span class="text-xs font-medium bg-surface-container-high px-2 py-1 rounded">Testing</span></td>
+                      <td class="px-8 py-5">
+                        <span
+                          class="text-xs font-medium bg-surface-container-high px-2 py-1 rounded"
+                          >Survei</span
+                        >
+                      </td>
                       <td class="px-8 py-5">
                         <div class="flex items-center gap-2">
-                          <img class="w-6 h-6 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrlw8rPUWGKy1b0JlBbFWncF8d4yciEGO73GmTJUcCMhQHtAN2ITv59iPHHOkPhgY4o8PtRwHHYKoYr5MNYaqm3GXRatQIv3m48lshLfwVMX49DWVvyP3fCF9J-lZivTdg4DnS5uNYKQSKd19ET8ji41Aa15fMwRgQpYnRk4ZFkbm2xvWew_VmybWxjq9nNZ123kKciO7xJkJPAffHFBUN2LmOxR9tH1BaaOuD_i35qTyG6LhTOQdT6PLFBEUVG60g0DqHQX1EiCU" />
-                          <span class="text-sm font-medium">Sarah Miller</span>
+                          <img
+                            class="w-6 h-6 rounded-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrlw8rPUWGKy1b0JlBbFWncF8d4yciEGO73GmTJUcCMhQHtAN2ITv59iPHHOkPhgY4o8PtRwHHYKoYr5MNYaqm3GXRatQIv3m48lshLfwVMX49DWVvyP3fCF9J-lZivTdg4DnS5uNYKQSKd19ET8ji41Aa15fMwRgQpYnRk4ZFkbm2xvWew_VmybWxjq9nNZ123kKciO7xJkJPAffHFBUN2LmOxR9tH1BaaOuD_i35qTyG6LhTOQdT6PLFBEUVG60g0DqHQX1EiCU"
+                          />
+                          <span class="text-sm font-medium">Teknik ULP</span>
                         </div>
                       </td>
-                      <td class="px-8 py-5 text-sm text-on-surface-variant">Oct 11, 04:30 PM</td>
+                      <td class="px-8 py-5 text-sm text-on-surface-variant">
+                        Oct 11, 04:30 PM
+                      </td>
                     </tr>
-                    <tr class="hover:bg-secondary-container transition-colors group">
+                    <tr
+                      class="hover:bg-secondary-container transition-colors group"
+                    >
                       <td class="px-8 py-5">
                         <div class="flex items-center gap-3">
-                          <span class="material-symbols-outlined text-primary">description</span>
+                          <span class="material-symbols-outlined text-primary"
+                            >description</span
+                          >
                           <div>
-                            <p class="text-sm font-bold">site_clearing_pano.jpg</p>
-                            <p class="text-[10px] text-on-surface-variant">IMAGE • 8.7 MB</p>
+                            <p class="text-sm font-bold">
+                              permohonan-perluasan-jaringan.jpg
+                            </p>
+                            <p class="text-[10px] text-on-surface-variant">
+                              IMAGE • 8.7 MB
+                            </p>
                           </div>
                         </div>
                       </td>
-                      <td class="px-8 py-5"><span class="text-xs font-medium bg-surface-container-high px-2 py-1 rounded">Clearance</span></td>
+                      <td class="px-8 py-5">
+                        <span
+                          class="text-xs font-medium bg-surface-container-high px-2 py-1 rounded"
+                          >Permohonan Perluasan Jaringan</span
+                        >
+                      </td>
                       <td class="px-8 py-5">
                         <div class="flex items-center gap-2">
-                          <img class="w-6 h-6 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxlzPUF95MxVJphcSR2QE7Ejn0hZpgckpXQqTTc5ylMmeB5ldf5jazP4SgScLvsXyN1fvNkj0sUjVvltX7u8dsS2CLZzS29mrH2Tk-9Y0RTwlp5L8Iu_ZPn89LuLF4NHkfJtgHlrwJkCZoR-lP76S_rcgkFtIP1GLuv3x-VMPgr_AU6KU85czaJqv8dUIZDdyjqEnwp_ZioIbNH1q8glHwKMy7_6U4LbLqUZ1xvJluQnL-LLFGUMNFnF8-r0XwnOtX5HupbSaFrAw" />
-                          <span class="text-sm font-medium">David Chen</span>
+                          <img
+                            class="w-6 h-6 rounded-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxlzPUF95MxVJphcSR2QE7Ejn0hZpgckpXQqTTc5ylMmeB5ldf5jazP4SgScLvsXyN1fvNkj0sUjVvltX7u8dsS2CLZzS29mrH2Tk-9Y0RTwlp5L8Iu_ZPn89LuLF4NHkfJtgHlrwJkCZoR-lP76S_rcgkFtIP1GLuv3x-VMPgr_AU6KU85czaJqv8dUIZDdyjqEnwp_ZioIbNH1q8glHwKMy7_6U4LbLqUZ1xvJluQnL-LLFGUMNFnF8-r0XwnOtX5HupbSaFrAw"
+                          />
+                          <span class="text-sm font-medium">Niaga & Pemasaran UP3</span>
                         </div>
                       </td>
-                      <td class="px-8 py-5 text-sm text-on-surface-variant">Oct 10, 11:05 AM</td>
+                      <td class="px-8 py-5 text-sm text-on-surface-variant">
+                        Oct 10, 11:05 AM
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <div class="p-6 border-t border-outline-variant/10 text-center">
-                <button class="text-xs font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">
+                <button
+                  class="text-xs font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors"
+                >
                   View All Project Records
                 </button>
               </div>
@@ -322,33 +434,65 @@
         <!-- Bento Information Cards -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
           <div class="bg-primary/5 p-6 rounded-xl border-l-4 border-primary">
-            <p class="text-xs font-bold text-primary uppercase mb-2">Storage Limit</p>
-            <p class="text-2xl font-black text-on-surface">14.2 GB <span class="text-sm font-normal text-on-surface-variant">/ 50 GB</span></p>
-            <div class="mt-4 h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
+            <p class="text-xs font-bold text-primary uppercase mb-2">
+              Storage Limit
+            </p>
+            <p class="text-2xl font-black text-on-surface">
+              14.2 GB
+              <span class="text-sm font-normal text-on-surface-variant"
+                >/ 50 GB</span
+              >
+            </p>
+            <div
+              class="mt-4 h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden"
+            >
               <div class="h-full bg-primary w-[28%]"></div>
             </div>
           </div>
           <div class="bg-tertiary/5 p-6 rounded-xl border-l-4 border-tertiary">
-            <p class="text-xs font-bold text-tertiary uppercase mb-2">Pending Reviews</p>
-            <p class="text-2xl font-black text-on-surface">04 <span class="text-sm font-normal text-on-surface-variant">Records</span></p>
-            <p class="text-xs text-on-surface-variant mt-4">Awaiting Manager validation for Stage 2 Compliance.</p>
+            <p class="text-xs font-bold text-tertiary uppercase mb-2">
+              Pending Reviews
+            </p>
+            <p class="text-2xl font-black text-on-surface">
+              04
+              <span class="text-sm font-normal text-on-surface-variant"
+                >Records</span
+              >
+            </p>
+            <p class="text-xs text-on-surface-variant mt-4">
+              Awaiting Manager validation for Stage 2 Compliance.
+            </p>
           </div>
-          <div class="bg-secondary-container/20 p-6 rounded-xl border-l-4 border-secondary">
-            <p class="text-xs font-bold text-secondary uppercase mb-2">Latest Audit</p>
+          <div
+            class="bg-secondary-container/20 p-6 rounded-xl border-l-4 border-secondary"
+          >
+            <p class="text-xs font-bold text-secondary uppercase mb-2">
+              Latest Audit
+            </p>
             <p class="text-2xl font-black text-on-surface">PASSED</p>
-            <p class="text-xs text-on-surface-variant mt-4">Internal quality check completed on Oct 09 by AI Sentinel.</p>
+            <p class="text-xs text-on-surface-variant mt-4">
+              Internal quality check completed on Oct 09 by AI Sentinel.
+            </p>
           </div>
         </div>
       </div>
     </main>
     <!-- Footer -->
-    <footer class="fixed bottom-0 right-0 w-[calc(100%-16rem)] py-4 bg-slate-50 dark:bg-slate-900 flex justify-between items-center px-8 border-t border-slate-200 dark:border-slate-800 text-slate-500 font-inter text-xs uppercase tracking-widest z-40">
+    <footer
+      class="fixed bottom-0 right-0 w-[calc(100%-16rem)] py-4 bg-slate-50 dark:bg-slate-900 flex justify-between items-center px-8 border-t border-slate-200 dark:border-slate-800 text-slate-500 font-inter text-xs uppercase tracking-widest z-40"
+    >
       <div class="flex items-center gap-6">
         <span class="font-bold text-slate-400">LISSA Enterprise</span>
         <div class="flex gap-4">
-          <a class="hover:text-blue-600 transition-colors" href="#">System Version 2.4.0</a>
-          <a class="hover:text-blue-600 transition-colors" href="#">Privacy Policy</a>
-          <a class="hover:text-blue-600 transition-colors" href="#">Terms of Service</a>
+          <a class="hover:text-blue-600 transition-colors" href="#"
+            >System Version 2.4.0</a
+          >
+          <a class="hover:text-blue-600 transition-colors" href="#"
+            >Privacy Policy</a
+          >
+          <a class="hover:text-blue-600 transition-colors" href="#"
+            >Terms of Service</a
+          >
         </div>
       </div>
       <p>© 2024 LISSA Enterprise. All rights reserved.</p>
