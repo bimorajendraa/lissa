@@ -1,0 +1,333 @@
+<!doctype html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Buat Permohonan - LISSA Utility Management</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#004e86",
+              "secondary-container": "#cfe6f2",
+              background: "#f8f9fa",
+              surface: "#ffffff",
+              "on-surface": "#191c1d",
+              "on-surface-variant": "#414751",
+              "outline-variant": "#c1c7d2",
+            },
+            borderRadius: { lg: "0.25rem", xl: "0.5rem", "2xl": "1rem" },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Manrope", sans-serif;
+      }
+      .form-input-custom {
+        @apply w-full rounded-xl border-slate-200 bg-slate-50 text-sm focus:border-primary focus:ring-primary/20 transition-all placeholder:text-slate-400;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f8f9fa] text-on-surface">
+    <aside
+      class="fixed left-0 top-0 h-full w-64 bg-slate-100 flex flex-col py-6 border-r border-slate-200 z-50"
+    >
+      <div class="px-6 mb-10">
+        <a href="dashboard.html" class="flex items-center gap-3">
+          <img
+            src="logo-lissa.png"
+            alt="LISSA Logo"
+            class="w-10 h-10 rounded-lg"
+          />
+          <h1 class="text-2xl font-black text-blue-900 tracking-tighter">
+            LISSA
+          </h1>
+        </a>
+      </div>
+      <nav class="flex-1 space-y-1">
+        <a
+          class="flex items-center py-3 px-5 text-slate-600 hover:bg-blue-50"
+          href="dashboard.html"
+          ><span class="material-symbols-outlined mr-3">dashboard</span>
+          Dashboard</a
+        >
+        <a
+          class="flex items-center py-3 px-5 text-blue-800 font-bold border-l-4 border-blue-700 bg-blue-50/50"
+          href="project-list.html"
+          ><span class="material-symbols-outlined mr-3">list_alt</span> Daftar
+          Permohonan</a
+        >
+      </nav>
+    </aside>
+
+    <main class="ml-64 pt-8 pb-20 px-10">
+      <div class="max-w-5xl mx-auto mb-10">
+        <div class="flex items-center gap-4 mb-4">
+          <a
+            href="project-list.html"
+            class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center hover:bg-white transition-colors"
+          >
+            <span class="material-symbols-outlined text-slate-600"
+              >arrow_back</span
+            >
+          </a>
+          <div>
+            <h2 class="text-3xl font-extrabold tracking-tight">
+              Buat Permohonan Baru
+            </h2>
+            <p class="text-sm text-slate-500 font-medium italic">
+              Silakan lengkapi data permohonan pelanggan di bawah ini.
+            </p>
+          </div>
+        </div>
+
+        <form action="#" class="space-y-8">
+          <div class="bg-white rounded-2xl p-8 shadow-sm ring-1 ring-black/5">
+            <div
+              class="flex items-center gap-3 mb-8 border-b border-slate-100 pb-4"
+            >
+              <span
+                class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold"
+                >01</span
+              >
+              <h3 class="text-lg font-bold">Data Pelanggan & Administrasi</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="lg:col-span-2">
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >Nama Perusahaan / Pelanggan</label
+                >
+                <input
+                  type="text"
+                  class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm focus:border-primary"
+                  placeholder="Contoh: PT ANEKA GAS INDUSTRI"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >HUT Perusahaan</label
+                >
+                <input
+                  type="date"
+                  class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm focus:border-primary"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >Pimpinan</label
+                >
+                <input
+                  type="text"
+                  class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm focus:border-primary"
+                  placeholder="Nama Pimpinan"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >Jabatan</label
+                >
+                <input
+                  type="text"
+                  class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm focus:border-primary"
+                  placeholder="Jabatan"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >No. Akta Perusahaan</label
+                >
+                <input
+                  type="text"
+                  class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm focus:border-primary"
+                  placeholder="Input nomor akta"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-sm ring-1 ring-black/5">
+            <div
+              class="flex items-center gap-3 mb-8 border-b border-slate-100 pb-4"
+            >
+              <span
+                class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold"
+                >02</span
+              >
+              <h3 class="text-lg font-bold">Spesifikasi Teknis & Layanan</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >Tarif / Daya</label
+                >
+                <input
+                  type="text"
+                  class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm focus:border-primary"
+                  placeholder="I3 / 240 KVA"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >Unit ULP</label
+                >
+                <select
+                  class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm focus:border-primary"
+                >
+                  <option>ULP TAMAN</option>
+                  <option>ULP KARANGPILANG</option>
+                  <option>ULP MENGANTI</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >PVR (WP)</label
+                >
+                <input
+                  type="number"
+                  class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm focus:border-primary"
+                  placeholder="0"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >Inverter (W)</label
+                >
+                <input
+                  type="number"
+                  class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm focus:border-primary"
+                  placeholder="0"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >Kelompok Industri</label
+                >
+                <input
+                  type="text"
+                  class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm focus:border-primary"
+                  placeholder="Kelompok"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >Jenis Industri</label
+                >
+                <input
+                  type="text"
+                  class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm focus:border-primary"
+                  placeholder="Jenis"
+                />
+              </div>
+              <div class="lg:col-span-2">
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >Alamat AP2T</label
+                >
+                <textarea
+                  rows="1"
+                  class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm focus:border-primary"
+                  placeholder="Alamat lengkap sesuai sistem AP2T"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-sm ring-1 ring-black/5">
+            <div
+              class="flex items-center gap-3 mb-8 border-b border-slate-100 pb-4"
+            >
+              <span
+                class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center font-bold"
+                >03</span
+              >
+              <h3 class="text-lg font-bold">Contact Person</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >Nama Contact Person</label
+                >
+                <div class="relative">
+                  <span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm"
+                    >person</span
+                  >
+                  <input
+                    type="text"
+                    class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm pl-10 focus:border-primary"
+                    placeholder="Nama Lengkap"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                  >Email</label
+                >
+                <div class="relative">
+                  <span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm"
+                    >mail</span
+                  >
+                  <input
+                    type="email"
+                    class="w-full rounded-xl border-slate-200 bg-slate-50 text-sm pl-10 focus:border-primary"
+                    placeholder="example@mail.com"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-end gap-4">
+            <button
+              type="button"
+              class="px-8 py-3 rounded-xl border border-slate-200 text-sm font-bold text-slate-600 hover:bg-slate-50 transition-colors"
+            >
+              Batalkan
+            </button>
+            <button
+              type="submit"
+              class="px-10 py-3 rounded-xl bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity"
+            >
+              Simpan Permohonan
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
