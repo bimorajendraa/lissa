@@ -158,7 +158,8 @@
       </nav>
       <div class="px-6 mt-auto">
         <a
-          href="login.html"
+          href="index.html"
+          onclick="handleLogout(event)"
           class="flex items-center gap-2 mt-4 px-2 py-2 text-slate-500 hover:text-red-600 transition-colors text-xs font-semibold"
         >
           <span class="material-symbols-outlined text-lg">logout</span> Sign Out
@@ -199,12 +200,16 @@
         <div class="flex items-center gap-3">
           <div class="text-right">
             <p
+              id="user-display-name"
               class="text-sm font-bold text-slate-900 dark:text-white leading-tight"
             >
-              Sarah Jenkins
+              Loading...
             </p>
-            <p class="text-[10px] text-slate-500 font-medium">
-              Operations Manager
+            <p
+              id="user-display-role"
+              class="text-[10px] text-slate-500 font-medium"
+            >
+              Loading...
             </p>
           </div>
           <img
@@ -343,19 +348,6 @@
                   </div>
                 </div>
               </div>
-              <!-- <div>
-                <label
-                  class="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant"
-                  >Service Address</label
-                >
-                <div class="flex items-start gap-2 mt-1">
-                  <span
-                    class="material-symbols-outlined text-primary text-sm mt-0.5"
-                    >location_on</span
-                  >
-                  <p class="text-sm leading-relaxed">DS BERINGIN BENDO NO XX</p>
-                </div>
-              </div> -->
             </div>
           </div>
           <!-- Visual Stepper / Timeline -->
@@ -640,5 +632,42 @@
         </div>
       </footer>
     </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 1. Ambil data dari localStorage (hasil dari halaman login)
+        const userName = localStorage.getItem("userName");
+        const userRole = localStorage.getItem("userRole");
+
+        // 2. Proteksi Halaman (Jika belum login, lempar ke halaman login)
+        if (!userName || !userRole) {
+          window.location.href = "login.html";
+          return; // Hentikan eksekusi script
+        }
+
+        // 3. Mapping ID Username statis ke Nama Asli agar lebih rapi
+        const nameDictionary = {
+          "nurul.aini": "Nurul Aini",
+          "noor.saadillah": "Noor Saadillah",
+          "dian.cahyu": "Dian Cahyu",
+          natalia: "Natalia",
+          "taufan.yoga": "Taufan Yoga",
+          "puji.gunadi": "Puji Gunadi",
+          manajemen: "Tim Manajemen",
+        };
+
+        // 4. Ubah teks di pojok kanan atas
+        const displayName = nameDictionary[userName] || userName;
+        document.getElementById("user-display-name").textContent = displayName;
+        document.getElementById("user-display-role").textContent = userRole;
+      });
+
+      // 5. Fungsi Log Out untuk menghapus sesi
+      function handleLogout(event) {
+        event.preventDefault(); // Mencegah pindah halaman langsung
+        localStorage.clear(); // Hapus memori login
+        window.location.href = "login.html"; // Arahkan ke login
+      }
+    </script>
   </body>
 </html>
